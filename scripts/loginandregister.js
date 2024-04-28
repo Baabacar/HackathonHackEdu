@@ -20,11 +20,6 @@ const firebaseConfig = {
   measurementId: "G-Z5X0G10Y6L",
 };
 
-signOut(auth).then(() => {
-  console.log("Utilisateur déconnecté");
-}).catch((error) => {
-  console.error("Erreur lors de la déconnexion :", error);
-});
 
 // **Initialize Firebase before using other functions**
 const app = initializeApp(firebaseConfig);
@@ -74,9 +69,6 @@ function signUp() {
     .then((userCredential) => {
       // Signed in
       const user = userCredential.user;
-      window.location.replace(
-        "http://127.0.0.1:5500/static/templates/home.html"
-      );
       showToast(Stmpl,"User created successfully!");
       console.log("User created successfully!");
     })
@@ -110,7 +102,7 @@ function login() {
 onAuthStateChanged(auth, (user) => {
     if (user) {
       // L'utilisateur est connecté, redirigez-le vers la page d'accueil
-      window.location.replace("http://127.0.0.1:5500/static/templates/home.html");
+      window.location.replace("http://127.0.0.1:5500/static/templates/choix.html");
     } else {
       // Aucun utilisateur connecté
       console.log("Aucun utilisateur connecté");
