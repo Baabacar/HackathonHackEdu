@@ -1,0 +1,390 @@
+body {
+    background: #1b213b;
+    color: #777;
+    font-family: Montserrat, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    flex: 1;
+    padding: 20px;
+    overflow: hidden; /* Nouvelle ligne */
+    display: flex;
+    justify-content: space-between;
+}
+
+.middle {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Nouvelle ligne */
+}
+
+.right {
+    flex: 1;
+    padding: 20px;
+    overflow: hidden; /* Nouvelle ligne */
+}
+
+#ti {
+    text-align: center;
+}
+
+#columnchart, #circlechart {
+    border: 2px solid;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    resize: horizontal;
+    overflow: auto;
+    float: right;
+}
+
+#progress1, #progress2, #progress3 {
+    border: 2px solid;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    resize: horizontal;
+    overflow: auto;
+    float: left;
+}
+
+#linechart {
+    border: 2px solid();
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    resize: horizontal;
+    overflow: auto;
+    margin: 0 auto;
+    position: absolute;
+    left: 60%;
+}
+
+.total {
+    border: 2px solid;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    resize: horizontal;
+    overflow: auto;
+}
+body {
+    background: #1b213b;
+    color: #777;
+    font-family: Montserrat, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    flex: 1;
+    padding: 20px;
+    overflow: hidden; /* Nouvelle ligne */
+}
+
+.middle {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Nouvelle ligne */
+}
+
+.right {
+    flex: 1;
+    padding: 20px;
+    overflow: hidden; /* Nouvelle ligne */
+}
+
+#ti {
+    text-align: center;
+}
+
+#columnchart, #circlechart {
+    border: 2px solid;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    resize: horizontal;
+    overflow: auto;
+    float: right;
+}
+
+#progress1, #progress2, #progress3 {
+    border: 2px solid;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    resize: horizontal;
+    overflow: auto;
+    float: left;
+}
+
+#linechart {
+    border: 2px solid;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    resize: horizontal;
+    overflow: auto;
+    margin: 0 auto;
+}
+
+.total {
+    border: 2px solid;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    resize: horizontal;
+    overflow: auto;
+}
+body {
+    background: #1b213b;
+    color: #777;
+    font-family: Montserrat, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    flex: 1;
+    padding: 20px;
+    overflow: hidden; /* Nouvelle ligne */
+}
+
+.middle {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Nouvelle ligne */
+}
+
+.right {
+    flex: 1;
+    padding: 20px;
+    overflow: hidden; /* Nouvelle ligne */
+}
+
+#ti {
+    text-align: center;
+}
+
+#columnchart, #circlechart {
+    border: 2px solid;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    resize: horizontal;
+    overflow: auto;
+    float: right;
+}
+
+#progress1, #progress2, #progress3 {
+    border: 2px solid;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    resize: horizontal;
+    overflow: auto;
+    float: left;
+}
+
+#linechart {
+    border: 2px solid;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    resize: horizontal;
+    overflow: auto;
+    margin: 0 auto;
+}
+
+.total {
+    border: 2px solid;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    resize: horizontal;
+    overflow: auto;
+}
+body {
+    background: #1b213b;
+    color: #777;
+    font-family: Montserrat, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    flex: 1;
+    padding: 20px;
+    overflow: hidden; /* Nouvelle ligne */
+}
+
+.middle {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Nouvelle ligne */
+}
+
+.right {
+    flex: 1;
+    padding: 20px;
+    overflow: hidden; /* Nouvelle ligne */
+}
+
+#ti {
+    text-align: center;
+}
+
+#columnchart, #circlechart {
+    border: 2px solid;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    resize: horizontal;
+    overflow: auto;
+    float: right;
+}
+
+#progress1, #progress2, #progress3 {
+    border: 2px solid;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    resize: horizontal;
+    overflow: auto;
+    float: left;
+}
+
+#linechart {
+    border: 2px solid;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    resize: horizontal;
+    overflow: auto;
+    margin: 0 auto;
+}
+
+.total {
+    border: 2px solid;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    resize: horizontal;
+    overflow: auto;
+}
+body {
+    background: #1b213b;
+    color: #777;
+    font-family: Montserrat, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    flex: 1;
+    padding: 20px;
+    overflow: hidden; /* Nouvelle ligne */
+}
+
+.middle {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Nouvelle ligne */
+}
+
+.right {
+    flex: 1;
+    padding: 20px;
+    overflow: hidden; /* Nouvelle ligne */
+}
+
+#ti {
+    text-align: center;
+}
+
+#columnchart {
+    border: 2px solid;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    resize: horizontal;
+    overflow: auto;
+    float: right;
+    position: absolute;
+    margin-top: 90px;
+    
+   
+}
+
+
+#progress1, #progress2, #progress3 {
+    border: 2px solid;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    resize: horizontal;
+    overflow: auto;
+    float: left;
+    margin-top: 220px;
+}
+
+#linechart {
+    border: 2px solid;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    resize: horizontal;
+    overflow: auto;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    right: 25%;
+    margin-top: 70px;
+   
+}
+#circlechart{
+    border: 2px solid;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    resize: horizontal;
+    overflow: auto;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+p{
+    text-align: center;
+    margin-top: 110px;
+}
+#ti{
+    text-align: center;
+}
+
+
