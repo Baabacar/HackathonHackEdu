@@ -91,7 +91,8 @@ function OpenCard() {
                     $("#counter").prepend('<span id="success"> <img src="../images/gif/Animation - 1714291205639.gif" alt="guide avatar" class="max-w-xs absolute h-screen hover:origin-center  md:max-w-sm m-auto transition duration-300 myimg" /> Bravo tu as reussi à trouver tous les images en </span>');
                     sound.play()
                     setTimeout(() => {
-                        window.location.replace("http://127.0.0.1:5501/static/templates/home.html");
+                        // window.location.href='/home/massar/HackathonHackEdu/static/templates/feli1.html';
+                        window.location.replace("http://127.0.0.1:5501/static/templates/feli1.html");
                     },3000)
         }
     }

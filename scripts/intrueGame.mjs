@@ -44,15 +44,21 @@ function dragDrop() {
 */
   if (matchingCounter === 5) {
     endMessage.style.display = 'block';
+    sound.play();
+  setTimeout(() => {
+    window.location.replace("http://127.0.0.1:5501/static/templates/feli2.html");
+},3000)
   }
   
   this.classList.remove('over');
 }
 
 function checkForMatch(selected, dropTarget) {
+ 
   switch (selected) {
     case 'e1':
       return dropTarget === 's1' ? true : false;
+     
 
     case 'e2':
       return dropTarget === 's1' ? true : false;
@@ -96,17 +102,19 @@ function checkForMatch2(selected, dropTarget) {
 
 const sound = new Audio("../sounds/mixkit-animated-small-group-applause-523.wav")
                
-function playAgain() {
-  matchingCounter = 0;
-  endMessage.style.display = 'none';
-  draggableListItems.forEach(item => {
-    document.getElementById(item.id).style.display = 'flex';
-  });
-  sound.play();
-  setTimeout(() => {
-      window.location.replace("http://127.0.0.1:5501/static/templates/home.html");
-  }, 3000);
-}
+// function playAgain() {
+//   matchingCounter = 0;
+//   endMessage.style.display = 'none';
+//   draggableListItems.forEach(item => {
+//     document.getElementById(item.id).style.display = 'flex';
+//     console.log("ici");
+//   });
+//   console.log("fin");
+//   sound.play();
+//   setTimeout(() => {
+//     window.location.replace("http://127.0.0.1:5501/static/templates/feli2.html");
+// },3000)
+// }
 
 function addEventListeners() {
   draggableListItems.forEach (item => {
@@ -115,5 +123,6 @@ function addEventListeners() {
     item.addEventListener('drop', dragDrop);
     item.addEventListener('dragover', dragOver);
     item.addEventListener('dragleave', dragLeave);
+    
   })
 }
