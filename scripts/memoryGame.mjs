@@ -51,6 +51,7 @@ function ResetGame() {
     return false;
 }
 
+const sound = new Audio("../sounds/mixkit-animated-small-group-applause-523.wav")
 function OpenCard() {
     var id = $(this).attr("id");
     if ($("#" + id + " img").is(":hidden")) {
@@ -87,7 +88,11 @@ function OpenCard() {
         if (ImgFound == ImgSource.length) {
             console.log("bravo")
             levels(Counter)
-            $("#counter").prepend('<span id="success">Bravo tu as reussi à trouver tous les images en </span>');
+                    $("#counter").prepend('<span id="success"> <img src="../images/gif/Animation - 1714291205639.gif" alt="guide avatar" class="max-w-xs absolute h-screen hover:origin-center  md:max-w-sm m-auto transition duration-300 myimg" /> Bravo tu as reussi à trouver tous les images en </span>');
+                    sound.play()
+                    setTimeout(() => {
+                        window.location.replace("http://127.0.0.1:5501/static/templates/home.html");
+                    },3000)
         }
     }
 }

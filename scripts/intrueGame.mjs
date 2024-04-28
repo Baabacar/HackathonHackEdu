@@ -93,12 +93,19 @@ function checkForMatch2(selected, dropTarget) {
   }
 }
 */
+
+const sound = new Audio("../sounds/mixkit-animated-small-group-applause-523.wav")
+               
 function playAgain() {
   matchingCounter = 0;
   endMessage.style.display = 'none';
   draggableListItems.forEach(item => {
     document.getElementById(item.id).style.display = 'flex';
-  })
+  });
+  sound.play();
+  setTimeout(() => {
+      window.location.replace("http://127.0.0.1:5501/static/templates/home.html");
+  }, 3000);
 }
 
 function addEventListeners() {

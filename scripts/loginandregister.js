@@ -102,7 +102,7 @@ function login() {
 onAuthStateChanged(auth, (user) => {
     if (user) {
       // L'utilisateur est connecté, redirigez-le vers la page d'accueil
-      window.location.replace("http://127.0.0.1:5500/static/templates/choix.html");
+      window.location.replace("http://127.0.0.1:5501/static/templates/choix.html");
     } else {
       // Aucun utilisateur connecté
       console.log("Aucun utilisateur connecté");

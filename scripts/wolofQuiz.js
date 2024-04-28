@@ -6,7 +6,8 @@ let stats = {
   currentTime: null,
   averageResponseTime: 0
 }; // Global stats Object
-
+const sound = new Audio("../sounds/mixkit-animated-small-group-applause-523.wav")
+                
 initiateGame(questions, stats);
 
 /*
@@ -14,7 +15,8 @@ initiateGame(questions, stats);
 */
 
 // Handle click events
-document.addEventListener("click", function (event) { // This way of handling is useful for dynamically created elements
+document.addEventListener("click", function (event) { 
+  console.log("1")// This way of handling is useful for dynamically created elements
   if (event.target.classList.contains("quiz-ans-btn")) { // Handle ".quiz-ans-btn" click
     Array.from(document.querySelectorAll(".quiz-ans-btn")).forEach(btn => btn.disabled = true); // Disable buttons
     event.target.blur();
@@ -64,6 +66,7 @@ document.querySelector("#quiz-play-again-btn").addEventListener("click", functio
 
 // Initiate New Game
 function initiateGame(questions, stats) {
+  console.log("6")
   fetch("https://opentdb.com/api.php?amount=10")
   .then(function(res) {
     if (!res.ok) {
@@ -90,6 +93,7 @@ function initiateGame(questions, stats) {
 
 // Manipulate API Data structure and return an Answers Array 
 function createAnswersArray(correct_answer, incorrect_answers) {
+  console.log("5")
   const totalAnswers = incorrect_answers.length + 1;
   const correct_answer_index = Math.floor(Math.random() * totalAnswers);
   let answersArray = [];
@@ -108,6 +112,7 @@ function createAnswersArray(correct_answer, incorrect_answers) {
 
 // Display Question
 function displayQuestion(questionObject) {
+  console.log("1")
   document.querySelector("#quiz-question").innerHTML = questionObject.question;
   document.querySelector("#quiz-question").classList.remove("zoomOut");
   document.querySelector("#quiz-question").classList.add("zoomIn");
@@ -142,8 +147,7 @@ function nextQuestion(questions) {
     if(questions.length>1) {
       questions.shift();
       displayQuestion(questions[0]);
-    }
-    else {
+    } else  {
       document.querySelector("#quiz-play-again").style.display = "block";
       document.querySelector("#quiz-play-again-btn").classList.add("flipInX");
       setTimeout(() => { 
@@ -156,6 +160,7 @@ function nextQuestion(questions) {
 
 // Display Stats
 function displayStats(stats) {
+  console.log("3")
   document.querySelectorAll("#quiz-stats>div>span").forEach(el => el.classList.add("fadeOut"));
   setTimeout(() => { 
     document.querySelector("#rate-span").innerHTML = stats.correct + "/" + stats.questionsAsked;          
@@ -164,11 +169,18 @@ function displayStats(stats) {
     document.querySelectorAll("#quiz-stats>div>span").forEach(el => { el.classList.remove("fadeOut"); el.classList.add("fadeIn");});
     setTimeout(() => { 
       document.querySelectorAll("#quiz-stats>div>span").forEach(el => el.classList.remove("fadeIn"));
-    }, 375);      
+    }, 375);
+    if (stats.correct === 5) {
+      sound.play();
+      setTimeout(() => {
+          window.location.replace("http://127.0.0.1:5501/static/templates/home.html");
+      }, 3000);
+  }
   }, 375);  
 }
 
 // Auxilliary Rounding Function
 function round(value, decimals) {
+  console.log("4")
   return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
 } // Note: decimals>=0, Example: round(1.005, 2); -> 1.01
