@@ -6,6 +6,7 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   onAuthStateChanged,
+  signOut,
 } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js";
 
 // Your web app's Firebase configuration
@@ -18,6 +19,12 @@ const firebaseConfig = {
   appId: "1:20863073632:web:ae6933dfca7618d2267205",
   measurementId: "G-Z5X0G10Y6L",
 };
+
+signOut(auth).then(() => {
+  console.log("Utilisateur déconnecté");
+}).catch((error) => {
+  console.error("Erreur lors de la déconnexion :", error);
+});
 
 // **Initialize Firebase before using other functions**
 const app = initializeApp(firebaseConfig);

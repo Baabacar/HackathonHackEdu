@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/intrueGames.css">
+    <title>Document</title>
+</head>
+<body>
+    <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Drag and Drop Game</title>  
+          <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+          <h1>Cherchez l'intrue</h1>
+          <p>Mettez les animaux sauuvagees dans la cage</p>
+        
+          <main class="container">
+            <div>
+              <ul class="draggable-list">
+                <li id="e1" draggable="true"><img src="../images/icon-cheetah.svg" alt=""></li>
+                <li id="e2" draggable="true"><img src="../images/icon-dolphin.svg" alt=""></li>
+                <li id="e3" draggable="true"><img src="../images/icon-gorilla.svg" alt=""></li>
+                <li id="e4" draggable="true"><img src="../images/icon-snake.svg" alt=""></li>
+                <li id="e5" draggable="true"><img src="../images/icon-lion.svg" alt=""></li>
+              </ul>
+            </div>
+            <div>
+              <ul class="draggable-list">
+                <div class="circles" id="s2" draggable="true"><img src="../images/icon-horse.svg" alt=""></div>
+                <li id="s1" draggable="false"><img src="../images/icon-jail.svg" alt=""></li>
+              </ul>
+            </div>
+              
+          </main>
+        
+          <div id="endMessage">
+            <h3>Bravo tu as trouve tous les reponse</h3>
+           </div>
+           <div id="wrongMessage">
+            <h3>Desole il fallait choisr le cheval</h3>
+           </div>
+          <div id="correctMessage">
+            <h3>Good Job!</h3>
+           </div>
+        
+          <script src="script.js"></script>
+        
+          
+           <!-- <button onclick="playAgain()">Reset</button> -->
+          
+        </body>
+        </html>
+    <script type="module" src="../../scripts/intrueGame.mjs"></script>
+</body>
+</html>

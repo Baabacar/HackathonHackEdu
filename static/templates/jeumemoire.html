@@ -1,13 +1,31 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/memorygame.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Memoire
-  </h1>
+    <!-- div jeu memoire avec carte -->
+    <div><img class="absolute z-10 w-48 m-10" src="../images/portrait-man-cartoon-style-removebg-preview 1.svg" alt=""></div>
+    <div class="h-screen flex justify-center items-center">
+    <img class="h-screen w-full absolute z-0" src="../images/9159743.jpg" alt="">
+    <div class="z-10 relative flex-col ml-20" id="picbox">
+        <span id="boxbuttons">
+            <span class="button">
+                <span id="counter">0</span>
+                Clicks
+            </span>
+        </span>
+        <div id="boxcard"></div>
+    </div>
+</div>
+    <script type= "module" src="../../scripts/memoryGame.mjs"></script>
 </body>
+
 </html>
